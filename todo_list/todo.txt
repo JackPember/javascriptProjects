@@ -1,0 +1,20 @@
+1:
+Create project and download required packages
+2:
+Setup project, create src, dist, and webpack-config.js
+3:
+Work on logic of project: Have a module to represent a TODO-list project,
+and a module to represent a TODO-list item. These will both be created using classes.
+Add modules for updating and removing data from TODO-list projects/items, and add
+modules for manipulating the DOM based on TODO-list data.
+make module to set up DOM on initial page load.
+
+Add a function to the create new project button that allows the user to input data and create a todo-project from that data 
+and send that data to the createProjectDiv() function
+
+Add a button to each project div to remove that project and its todo items
+
+Add a click event handler to each project div that will display all the todo items in the project
+
+Add a button to add a new todo item, and have each todo item have its own delete button to remove it from the project.
+

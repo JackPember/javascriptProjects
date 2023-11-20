@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    margin: 1%;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 5px solid red;
+}
+
+.container > * {
+    flex-grow: 1;
+    color: white;
+}

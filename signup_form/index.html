@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">
+        <img src="odin-lined.png" alt="odin_logo">
+        <h1 class="odin">ODIN</h1>
+      </div>
+    </div>
+    <div class="right">
+        <p>Welcome to the real fake service!
+            You know you need something like this in your life to help you realize your deepest dreams.
+        <p/>
+        <p> Sign up <em>now</em> to get nothing.</p>
+        <br>
+        <p>
+            You <em>know</em> you want to.
+        </p>
+        <br>
+        <br>
+        <form action="#" method="post">
+            <div class="box">
+              <h3>Let's do this!</h3>
+              <div class="names">
+                <div class="flexfname">
+                  <label for="first_name">First Name</label>
+                  <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="flexlname">            
+                  <label for="last_name">Last Name</label>
+                  <input type="text" name="last_name" id="last_name" required> <!--TODO make each group of inputs into its own row oriented flex box and align them within the form-->
+                </div>
+                </div>
+              <div class="contact">
+                <div class="flexmail">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <div class="flextel">
+                 <label for="phone">Phone Number</label>
+                 <input type="tel" name="phone" id="phone" required>
+                </div>
+              </div>
+              <div class="pw">
+                <div class="flexpw">
+                  <label for="password">Password</label>
+                  <input class="error" type="password" name="password" id="password" minlength="8" title="*Passwords do not match" required>
+                  <p id="error_msg">*Passwords do not match</p>
+                </div>
+                <div class="flexconfirmpw">
+                  <label for="password_confirm">Confirm Password</label>
+                  <input class="error" type="password" name="password_confirm" id="password_confirm" minlength="8" title="*Passwords do not match" required>
+                </div>
+              </div>
+          </div>
+            <button type="submit" id="submit_btn" class="submit_btn">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>

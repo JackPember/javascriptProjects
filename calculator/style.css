@@ -1,0 +1,83 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.calc {
+    margin-top: 10rem;
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid: 6 / 4;
+    gap: 6px;
+    border: 10px solid black;
+    background-color: black;
+}
+
+.calc > .result {
+    text-align: right;
+    font-size: 3rem;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    background-color: lightgray;
+}
+
+.calc > .first {
+    grid-row: 2;
+}
+
+.calc > .second {
+    grid-row: 3;
+}
+
+.calc > .third {
+    grid-row: 4;
+}
+
+.calc > .fourth {
+    grid-row: 5;
+}
+
+.calc > .fifth {
+    grid-row: 6;
+}
+
+.calc > #zero {
+    grid-column: 1 / 3;
+}
+
+#divide,
+#times,
+#minus,
+#plus,
+#equals {
+    background-color: orange;
+    border: orange;
+}
+
+#clear,
+#posneg,
+#percent {
+    border: #3b82f6;
+    background-color: #3b82f6;
+}
+
+#zero,
+#decimal,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
+    background-color: #0f766e;
+    border: #0f766e;
+}
+.calc > * {
+    border-radius: 5px;
+}
